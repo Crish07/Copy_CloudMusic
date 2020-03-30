@@ -1,0 +1,26 @@
+<!--轮播-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="5000" duration="1000" indicator-color="rgba(255,255,255,.7)" indicator-active-color="#b01d0a">
+  <block wx:for="{{movies}}">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 推荐列表 -->
+<view class="recommend">
+  <block wx:for="{{list}}" wx:for-index="key">
+    <recommend-item data-img="{{item.url}}" data-test="{{item.introduce}}" bindtap="playList" id="{{item.type}}">
+      <view class="list">
+        <image class="recommend-img" src="{{item.url}}"></image>
+        <view class="recommend-text">
+          <view class="list-left">
+            <image src="../../images/earphone1.png"></image>
+            <text>{{item.test}}</text>
+          </view>
+          <image src="../../images/play.png"></image>
+        </view>
+      </view>
+      <text class="introduce">{{item.introduce}}</text>
+    </recommend-item>
+  </block>
+</view>

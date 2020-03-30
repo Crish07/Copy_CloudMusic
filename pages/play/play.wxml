@@ -1,0 +1,29 @@
+<view class="play">
+<!-- 专辑图片 -->
+  <view class="play-music" hidden="{{islyric}}" bindtap="showlyric">
+    <view class="music" animation="{{animationData}}">
+      <image src="{{song.albumpic_big}}"></image>
+    </view>
+  </view>
+  <!-- 歌名及歌手 -->
+  <view class="play-text">
+    <view>{{song.songname}}</view>
+    <view>{{song.singername}}</view>
+  </view>
+  <!-- 歌词 -->
+  <view class="lyric-content" hidden="{{!islyric}}" bindtap="showCircle">
+    <view class="lyric">
+      <block wx:for="{{lyricArr}}">
+        <view> {{item}} </view>
+      </block>
+    </view>
+  </view>
+  <!-- 暂停播放 上一首下一首 -->
+  <view class="play-control">
+    <image bindtap="prevsong" src="../../images/prev.png"></image>
+    <view class="act-toggle" bindtap="playToggle">
+      <image src="../../images/{{isPlaying ? 'stop' : 'play'}}.png"></image>
+    </view>
+    <image bindtap="nextsong" src="../../images/next.png"></image>
+  </view>
+</view>

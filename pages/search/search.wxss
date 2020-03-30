@@ -1,0 +1,62 @@
+/* 轮播 */
+.swiper {
+ height: 400rpx;
+ width: 100%;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+.search {
+  width: 100%;
+  height: 90rpx;
+  background: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+}
+.search input {
+  width: 88%;
+  height: 60%;
+  font-size: 14px;
+  background: white;
+  border-radius: 4px;
+  padding-left: 25px; 
+}
+.search-img {
+  position: absolute;
+  top:50%;
+  left: 16px;
+  margin-top: -7px;
+  z-index: 2;
+} 
+.placeholderStyle {
+  font-size: 12px;
+}
+
+.hotsearch {
+  padding: 10px;
+  color:#4D4D4D;
+  font-size: 14px;
+}
+.example {
+  display: flex;
+  flex-flow: wrap;
+}
+.hotsearch-text {
+  padding: 7px 10px;
+  margin: 6px; 
+  border: 1px solid #434343;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #434343;
+}
+
+/* 测试 */
+.submit {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}

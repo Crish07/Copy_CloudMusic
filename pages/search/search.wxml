@@ -1,0 +1,46 @@
+<!--轮播-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="5000" duration="1000" indicator-color="rgba(255,255,255,.7)" indicator-active-color="#b01d0a">
+  <block wx:for="{{movies}}">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 搜索框 -->
+<view class="search">
+  <icon class="search-img" type="search" size="14" />
+  <input bindconfirm="searchSubmit" bindinput="inputing" confirm-type="search" placeholder="搜索歌名、歌手" placeholder-class="placeholderStyle" auto-focus value="{{value}}" />
+  <!-- <view bindtap="searchSubmit" class="submit">搜索</view>  -->
+</view>
+<view wx:if="{{searchSub}}">
+  <view class="hotsearch">
+    <text>热门搜索</text>
+  </view>
+  <view class="example">
+    <block wx:for="{{search}}">
+      <text bindtap="pushValue" data-text="{{item}}" class="hotsearch-text">{{item}}</text>
+    </block>
+  </view>
+</view>
+<block wx:for="{{music}}">
+  <navigator url="/pages/play/play?songid={{item.songid}}">
+    <view class="listTd">
+      <view class="listTd-left">
+        <text>{{index+1}}</text>
+        <view class="listTd-center">
+          <text>{{item.songname
+}}</text>
+          <view class="listTd-SQ">
+            <image src="../../images/sq.png"></image>
+            <text>{{item.singername}}</text>
+          </view>
+        </view>
+      </view>
+      <image src="../../images/play1.png"></image>
+
+    </view>
+  </navigator>
+</block>
+<loading hidden="{{!loading}}">
+  正在搜索...
+</loading>

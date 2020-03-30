@@ -1,0 +1,32 @@
+<view class="playtittle">
+  <image src="{{playimg}}"></image>
+  <text>{{playtest}}</text>
+</view>
+<view>
+  <!-- <view class="listTr">
+    <image src="../../images/play1.png"></image>
+    <text>播放全部</text>
+  </view> -->
+  <block wx:for="{{music}}">
+    <navigator url="/pages/play/play?songid={{item.songid}}">
+      <view class="listTd">
+        <view class="listTd-left">
+          <text>{{index+1}}</text>
+          <view class="listTd-center">
+            <text>{{item.songname
+}}</text>
+            <view class="listTd-SQ">
+              <image src="../../images/sq.png"></image>
+              <text>{{item.singername}}</text>
+            </view>
+          </view>
+        </view>
+        <image src="../../images/play1.png"></image>
+
+      </view>
+    </navigator>
+  </block>
+  <loading hidden="{{!loading}}">
+    加载中…
+  </loading>
+</view>

@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#b01d0a",
+  "navigationBarTitleText": "推荐音乐",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

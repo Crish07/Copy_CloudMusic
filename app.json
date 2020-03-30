@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/play/play",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#b01d0a",
+    "navigationBarTitleText": "CRISH",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "images/music12.png",
+        "selectedIconPath": "images/music1.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search1.png"
+      }
+    ],
+    "color": "#707070",
+    "selectedColor": "#b01d0a",
+    "backgroundColor": "#fff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

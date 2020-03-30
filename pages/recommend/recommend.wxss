@@ -1,0 +1,72 @@
+/* 轮播 */
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+/*list展示列表  */
+
+.recommend {
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommend recommend-item {
+  flex-basis: 32.5%;
+}
+
+.list {
+  position: relative;
+}
+
+.recommend-img {
+  width: 100%;
+  height: 220rpx; 
+}
+
+.recommend-text {
+  width: 100%;
+  padding: 4px 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 9rpx;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommend-text image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 5px;
+}
+
+.recommend-text text {
+  font-size: 12px;
+}
+
+.list-left {
+  display: flex;
+  align-items: center;
+}
+
+.list-left image {
+  margin-right: 6px;
+}
+
+.introduce {
+  display: -webkit-box; 
+  font-size: 12px;
+  color: #0D0D0D;
+  padding: 5rpx;
+}

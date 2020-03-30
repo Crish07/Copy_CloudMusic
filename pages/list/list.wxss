@@ -1,0 +1,33 @@
+.playtittle {
+  display: flex;
+  padding: 10px;
+}
+.playtittle image {
+  width: 220rpx;
+  height: 220rpx;
+}
+.playtittle text {
+  font-size: 16px;
+  color: #151515;
+  margin: 20px 0 0 8px;
+}
+
+.listTr {
+  padding: 0 0 5px 5px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+.listTr image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 4px;
+}
+.listTr text {
+  font-size: 16px;
+  color: #151515;
+}
+.listTr text:nth-of-type(2){
+  color: #555555;
+  font-size: 14px;
+}
